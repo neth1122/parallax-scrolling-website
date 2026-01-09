@@ -1,76 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parallax responsive landing page</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Responsive Landing Page</title>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <!-- ICONS BOXICONS -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <!-- ===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <a href="#" class="nav__logo">Mountain</a>
+    <!-- BOXICONS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+        rel="stylesheet"
+    />
+</head>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu-alt-right'></i>
-                </div>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="l-header">
+        <nav class="nav bd-grid" aria-label="Main navigation">
+            <a href="#" class="nav__logo">Mountain</a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Aventure</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Discover</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <i class="bx bx-menu-alt-right"></i>
+            </button>
 
-        <main>
-            <!-- ===== HOME =====-->
-            <div class="home">
-                <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
-                <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
-                <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div>
-                <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Explore</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Aventure</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Discover</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-                <h1 class="parallax home__title" data-rellax-speed="-6">Mountain</h1>
-                <span class="parallax home__subtitle" data-rellax-speed="-5">Mountain explore</span> 
+    <main>
+        <!-- ===== HOME ===== -->
+        <section class="home" aria-label="Hero section">
+            <div
+                class="parallax home__parallax home__parallax-img1"
+                data-rellax-speed="-9"
+            ></div>
+            <div
+                class="parallax home__parallax home__parallax-img2"
+                data-rellax-speed="-7"
+            ></div>
+            <div
+                class="parallax home__parallax home__parallax-img3"
+                data-rellax-speed="-6"
+            ></div>
+            <div
+                class="parallax home__parallax home__parallax-img4"
+                data-rellax-speed="-3"
+            ></div>
 
-                <div class="home__scroll">
-                   <a href="#section"><i class='bx bx-mouse'></i></a>
-                </div>
+            <div class="home__content">
+                <h1 class="parallax home__title" data-rellax-speed="-6">
+                    Mountain
+                </h1>
+                <span class="parallax home__subtitle" data-rellax-speed="-5">
+                    Mountain explore
+                </span>
             </div>
 
-            <!-- ===== SECTION =====-->
-            <section class="l-section" id="section">
-                <div class="section">
-                    <div class="section__data">
-                        <h2 class="section__title">Scaling mountains</h2>
-                        <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laboriosam. Esse ipsum culpa laboriosam, totam hic quidem recusandae eos, numquam iusto aliquid expedita est sapiente quaerat inventore voluptatem corporis aliquam.</p>
-                    </div>
-        
-                    <img src="assets/img/imgm.jpg" alt="" class="section__img">
+            <div class="home__scroll">
+                <a href="#section" aria-label="Scroll to content">
+                    <i class="bx bx-mouse"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== SECTION ===== -->
+        <section class="l-section" id="section">
+            <div class="section">
+                <div class="section__data">
+                    <h2 class="section__title">Scaling mountains</h2>
+                    <p class="section__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus, laboriosam. Esse ipsum culpa laboriosam, totam
+                        hic quidem recusandae eos, numquam iusto aliquid expedita
+                        est sapiente quaerat inventore voluptatem corporis aliquam.
+                    </p>
                 </div>
-            </section>
-        </main>
 
-        <!-- RELLAX JS -->
-        <script src="assets/js/rellax.min.js"></script>
+                <img
+                    src="assets/img/imgm.jpg"
+                    alt="Mountain landscape"
+                    class="section__img"
+                    loading="lazy"
+                />
+            </div>
+        </section>
+    </main>
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!-- ===== SCRIPTS ===== -->
+    <script src="assets/js/rellax.min.js"></script>
 
-        <!-- SCROLL REVEAL -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+        integrity="sha512-..."
+        crossorigin="anonymous"
+    ></script>
 
-        <!-- MAIN JS -->
-        <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    </body>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
